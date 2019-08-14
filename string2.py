@@ -20,7 +20,7 @@
 def verbing(s):
     """Your code goes here.  Edit this docstring."""
     if len(s) >= 3:
-        if s.end("ing"):
+        if s.endswith("ing"):
             s = s + "ly"
         else:
             s = s + "ing"
@@ -53,13 +53,13 @@ def not_bad(s):
 #  a-front + b-front + a-back + b-back
 def front_back(a, b):
     """Your code goes here.  Edit this docstring."""
-    amid = len(a) / 2
-    bmid = len(b) / 2
+    a_middle = len(a) / 2
+    b_middle = len(b) / 2
     if len(a) % 2:
-        amid = amid + 1
+        a_middle  = a_middle  + 1
     if len(b) % 2:
-        bmid = bmid + 1
-    return a[:amid] + b[:bmid] + a[amid:] + b[bmid:]
+        b_middle = b_middle + 1
+    return a[:a_middle ] + b[:b_middle] + a[a_middle :] + b[b_middle:]
 
 
 # Provided simple test() function used in main() to print
