@@ -40,7 +40,7 @@ def donuts(count):
 def both_ends(s):
     """both ends."""
     if len(s) < 2:
-        return
+        return ''
     else:
         return s[:2] + s[-2:]
     return
